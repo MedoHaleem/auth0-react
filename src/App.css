@@ -55,3 +55,11 @@ nav li a:hover {
 nav button {
   margin-top: 13px;
 }
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #4f878d;
+  padding: 10px;
+  text-align: center;
+}

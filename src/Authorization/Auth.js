@@ -3,6 +3,7 @@ import auth0 from 'auth0-js';
 export default class Auth {
     constructor(history) {
         this.history = history;
+        this.userProfile = null;
         this.auth0 = new auth0.WebAuth({
             domain: process.env.REACT_APP_AUTH0_DOMAIN,
             clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
@@ -27,6 +28,30 @@ export default class Auth {
         });
     };
 
+    getProfile = () => {
+        return new Promise((resolve, reject) => {
+            if (this.userProfile) return resolve(this.userProfile);
+            this.auth0.client.userInfo(this.getAccessToken(), (err, profile) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    if (profile) this.userProfile = profile;
+                    resolve(profile);
+                }
+            });
+        });
+    };
+
+
+    getAccessToken = () => {
+        const accessToken = localStorage.getItem("access_token");
+        if (!accessToken) {
+            throw new Error("No access token found.");
+        }
+        return accessToken;
+    };
+
+
     setSession = authResult => {
         //set time when token expire, we get time in seconds convert it to milliseconds and get current UTC time in  UNIX Epoch time
         const expiresAt = JSON.stringify(authResult.expiresIn * 1000 + new Date().getTime());
@@ -40,6 +65,7 @@ export default class Auth {
         const expiresAt = JSON.parse(localStorage.getItem('expires_at'));
         return new Date().getTime() < expiresAt;
     }
+
     logout = () => {
         localStorage.removeItem("access_token");
         localStorage.removeItem("id_token");
@@ -47,7 +73,7 @@ export default class Auth {
         this.auth0.logout({
             clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
             returnTo: 'http://localhost:3000'
-        })
-    }
+        });
+    };
 
 }
