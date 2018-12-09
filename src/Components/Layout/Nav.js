@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom";
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 
 class Nav extends Component {
     render() {
@@ -16,6 +16,9 @@ class Nav extends Component {
                     </li>
                     <li>
                         <Link to="/profile">Profile</Link>
+                    </li>
+                    <li>
+                        <Link to="/customers">Customers</Link>
                     </li>
                     <li>
                         <a href="#" onClick={isAuthenticated() ? logout : login}>

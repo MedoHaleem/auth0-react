@@ -20,13 +20,14 @@ class Profile extends Component {
             <>
                 <div className="center">
                 <h1>Profile</h1>
-                <h3>{profile.name}</h3>
+                <h3>{profile.nickname}</h3>
                 <img
                     style={{ maxWidth: 250, maxHeight: 250 }}
                     src={profile.picture}
                     alt="profile pic"
                 />
                     <h3>{profile.email}</h3>
+                    <h2>role: {profile["http://localhost:3000/roles"]}</h2>
                 </div>
             </>
         );

@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import {Route} from "react-router-dom";
-import Home from './Home';
-import Profile from './Profile';
-import Nav from './Nav';
+import Home from './Home/Home';
+import Profile from './Profile/Profile';
+import Nav from './Layout/Nav';
 import './App.css';
-import Auth from './Authorization/Auth';
-import PrivateRoute from './PrivateRoute';
-import AuthContext from './AuthContext';
-import Callback from "./Callback";
+import Auth from '../Authorization/Auth';
+import PrivateRoute from '../PrivateRoute';
+import AuthContext from '../AuthContext';
+import Callback from './Callback';
+import Customers from './Customers/Customers';
 
 class App extends Component {
     constructor(props) {
@@ -32,7 +33,8 @@ class App extends Component {
                         path="/callback"
                         render={props => <Callback auth={auth} {...props} />}
                     />
-                    <PrivateRoute path="/profile" component={Profile} />
+                    <PrivateRoute path="/profile" component={Profile}/>
+                    <PrivateRoute path="/customers" auth={auth} component={Customers}/>
                 </div>
             </AuthContext.Provider>
         </>;
