@@ -1,5 +1,7 @@
 import auth0 from 'auth0-js';
 
+const REDIRECT_ONLOGIN = "redirect_onlogin";
+
 export default class Auth {
     constructor(history) {
         this.history = history;
@@ -15,17 +17,20 @@ export default class Auth {
     }
 
     login = () => {
+        localStorage.setItem(REDIRECT_ONLOGIN, JSON.stringify(this.history.location));
         this.auth0.authorize();
     };
     handleAuthentication = () => {
         this.auth0.parseHash((err, authResult) => {
             if (authResult && authResult.accessToken && authResult.idToken) {
                 this.setSession(authResult);
-                this.history.push('/');
+                let redirectLocation = localStorage.getItem(REDIRECT_ONLOGIN) === undefined ? "/" : JSON.parse(localStorage.getItem(REDIRECT_ONLOGIN));
+                this.history.push(redirectLocation);
             } else if (err) {
                 this.history.push('/');
                 alert(`Error: ${err.error}`);
             }
+            localStorage.require(REDIRECT_ONLOGIN);
         });
     };
 
