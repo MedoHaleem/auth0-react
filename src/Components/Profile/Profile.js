@@ -28,6 +28,8 @@ class Profile extends Component {
                 />
                     <h3>{profile.email}</h3>
                     <h2>role: {profile["http://localhost:3000/roles"]}</h2>
+                    <h2>Access Token</h2>
+                    <pre> {this.props.auth.getAccessToken()}</pre>
                 </div>
             </>
         );

@@ -66,6 +66,7 @@ export default class Auth {
         expiresAt = authResult.expiresIn * 1000 + new Date().getTime();
         accessToken = authResult.accessToken;
         idToken = authResult.idToken;
+        this.scheduleTokenRenewal();
     };
 
     isAuthenticated() {
@@ -88,6 +89,11 @@ export default class Auth {
             }
             if (cb) cb(err, result);
         });
+    }
+
+    scheduleTokenRenewal() {
+        const delay = expiresAt - Date.now();
+        if (delay > 0) setTimeout(() => this.renewToken(), delay);
     }
 
 }

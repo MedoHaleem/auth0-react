@@ -1,47 +1,47 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
 .body {
-  margin: 15px;
+    margin: 15px;
 }
 
 h1,
 h2,
 h3 {
-  color: #001826;
+    color: #001826;
 }
 
 button {
-  margin: 5px;
+    margin: 5px;
 }
 
 ul.unstyled {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-image: linear-gradient(to bottom right, #abc6c9, #4f878d);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #abc6c9, #4f878d);
 }
 
 nav li {
-  float: left;
+    float: left;
 }
 
 nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 25px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
 }
 
 .logo-nav {
@@ -49,40 +49,61 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #4f878d;
+    background-color: #4f878d;
 }
 
 nav button {
-  margin-top: 13px;
+    margin-top: 13px;
 }
 
 .center {
-  margin: auto;
-  width: 50%;
-  border: 3px solid #4f878d;
-  padding: 10px;
-  text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid #4f878d;
+    padding: 10px;
+    text-align: center;
 }
 
 .customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .customers td, .customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
-.customers tr:nth-child(even){background-color: #f2f2f2;}
+.customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-.customers tr:hover {background-color: #ddd;}
+.customers tr:hover {
+    background-color: #ddd;
+}
 
 .customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4f878d;
-  color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4f878d;
+    color: white;
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
 }
