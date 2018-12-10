@@ -107,3 +107,18 @@ pre {
     display: block;
     word-wrap: break-word;
 }
+
+.button {
+    background-color: #4f878d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+.button:hover { cursor: pointer; }
+

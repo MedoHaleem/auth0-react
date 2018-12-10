@@ -1,7 +1,7 @@
 import auth0 from 'auth0-js';
 
 const REDIRECT_ONLOGIN = "redirect_onlogin";
-
+// eslint-disable-next-line
 let idToken = null;
 let accessToken = null;
 let expiresAt = null;

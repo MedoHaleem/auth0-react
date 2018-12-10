@@ -10,9 +10,8 @@ class Customers extends Component {
     componentDidMount() {
         fetch("/customers", {headers: {Authorization: `Bearer ${this.props.auth.getAccessToken()}`}})
             .then(response => {
-                console.log(response);
                 if (response.ok) return response.json();
-                throw new Error("Network Error");
+                throw new Error(`Status ${response.status}: ${response.statusText}`);
             }).then(response => this.setState({customers: response.customers}))
             .catch(error => this.setState({error: error.message}));
     }
