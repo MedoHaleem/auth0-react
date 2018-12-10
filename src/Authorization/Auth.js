@@ -2,6 +2,10 @@ import auth0 from 'auth0-js';
 
 const REDIRECT_ONLOGIN = "redirect_onlogin";
 
+let idToken = null;
+let accessToken = null;
+let expiresAt = null;
+
 export default class Auth {
     constructor(history) {
         this.history = history;
@@ -30,7 +34,7 @@ export default class Auth {
                 this.history.push('/');
                 alert(`Error: ${err.error}`);
             }
-            localStorage.require(REDIRECT_ONLOGIN);
+            localStorage.removeItem(REDIRECT_ONLOGIN);
         });
     };
 
@@ -50,7 +54,6 @@ export default class Auth {
 
 
     getAccessToken = () => {
-        const accessToken = localStorage.getItem("access_token");
         if (!accessToken) {
             throw new Error("No access token found.");
         }
@@ -60,26 +63,31 @@ export default class Auth {
 
     setSession = authResult => {
         //set time when token expire, we get time in seconds convert it to milliseconds and get current UTC time in  UNIX Epoch time
-        const expiresAt = JSON.stringify(authResult.expiresIn * 1000 + new Date().getTime());
-
-        localStorage.setItem("access_token", authResult.accessToken);
-        localStorage.setItem("id_token", authResult.idToken);
-        localStorage.setItem("expires_at", expiresAt);
+        expiresAt = authResult.expiresIn * 1000 + new Date().getTime();
+        accessToken = authResult.accessToken;
+        idToken = authResult.idToken;
     };
 
     isAuthenticated() {
-        const expiresAt = JSON.parse(localStorage.getItem('expires_at'));
         return new Date().getTime() < expiresAt;
     }
 
     logout = () => {
-        localStorage.removeItem("access_token");
-        localStorage.removeItem("id_token");
-        localStorage.removeItem("expires_at");
         this.auth0.logout({
             clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
             returnTo: 'http://localhost:3000/'
         });
     };
+
+    renewToken(cb) {
+        this.auth0.checkSession({}, (err, result) => {
+            if (err) {
+                console.log(`Error: ${err.error} - ${err.error_description}.`);
+            } else {
+                this.setSession(result);
+            }
+            if (cb) cb(err, result);
+        });
+    }
 
 }
