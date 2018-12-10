@@ -1,4 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -6,39 +5,76 @@ In the project directory, you can run:
 
 ### `npm start`
 
+Copy the .env file and place it in root folder (client) <br>
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### How Auth0 was setup
 
-### `npm test`
+Auth0 login button is found in root page and through the navigation bar, you can login through email or gmail.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How was Auth0 Roles was setup
 
-### `npm run build`
+Sales rep roles is setup using  slightly edited Auth0 rule, this is the following rule:
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```function (user, context, callback) {
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  // Roles should only be set to verified users.
+  if (!user.email || !user.email_verified) {
+    return callback(null, user, context);
+  }
 
-### `npm run eject`
+  user.app_metadata = user.app_metadata || {};
+  // You can add a Role based on what you want
+  // In this case I check domain
+  const addRolesToUser = function(user) {
+    const endsWith = '@asolvi.com';
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    if (user.email && (user.email.substring(user.email.length - endsWith.length, user.email.length) === endsWith)) {
+      return ['sales_rep'];
+    }
+    if (user.email === "medo_e3@hotmail.com") {
+      return ['sales_rep'];
+    }
+    return ['user'];
+  };
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  const roles = addRolesToUser(user);
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  user.app_metadata.roles = roles;
+  auth0.users.updateAppMetadata(user.user_id, user.app_metadata)
+    .then(function() {
+      context.idToken['http://localhost:3000/roles'] = user.app_metadata.roles;
+      callback(null, user, context);
+    })
+    .catch(function (err) {
+      callback(err);
+    });
+}
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+ Of course in the real life case we would store and setup user roles through Database in users_role table that contain for example user_id and role_id
+ and we use Auth0 rule to fetch the user role through the database (Auth0 already have template to connect to the relational database to get user role).
+ I opted to this approach to speed up configuration and setup as per assigment spec.
+ 
+ 
+ By default getting user role is considered a custom claim as Auth0 doesn't provide it by default in the access token so I wrote a custom rule to set the user role in the claim.
+ 
+ ```
+function (user, context, callback) {
+  if(user.app_metadata && user.app_metadata.roles) {
+   context.accessToken['http://localhost:3000/roles'] = user.app_metadata.roles;
+  }
+  callback(null, user, context);
+}
+```
+ 
+ 
+### Getting the Access Token
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After your login you can get access token in profile page to test the api separately without the client side app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Access Token is stored in-memory to protect against XSRF and react have already built-in security against XSS, I maintain user session across tabs
+through silent auth request provided by Auth0.
