@@ -1,5 +1,5 @@
 import React from 'react';
-import {shallow, mount} from 'enzyme';
+import {shallow} from 'enzyme';
 import Profile from './Profile';
 
 
@@ -14,7 +14,9 @@ describe('Profile', () => {
     it('Shows Profile', () => {
         const props = {
             profile: {nickName: "Medo"},
-            auth: {getAccessToken: () => {return "123456789"}}
+            auth: {
+                getAccessToken: () => 123456789
+            }
 
         };
         const wrapper = shallow(<Profile {...props}/>);

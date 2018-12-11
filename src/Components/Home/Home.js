@@ -8,7 +8,7 @@ class Home extends Component {
             <div>
                 <h1>Welcome to Aslovi Customer Service</h1>
                 {isAuthenticated() ? (
-                    <Link to="/profile">View profile</Link>
+                    <Link id="profile" to="/profile">View profile</Link>
                 ) : (
                     <button className="button" onClick={login}>Log In</button>
                 )}
