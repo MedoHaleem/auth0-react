@@ -8,7 +8,7 @@ import Auth from '../Authorization/Auth';
 import PrivateRoute from '../PrivateRoute';
 import AuthContext from '../AuthContext';
 import Callback from './Callback';
-import Customers from './Customers/Customers';
+import CustomerContainer from '../Containers/CustomersContainer';
 
 class App extends Component {
     constructor(props) {
@@ -42,7 +42,7 @@ class App extends Component {
                         render={props => <Callback auth={auth} {...props} />}
                     />
                     <PrivateRoute path="/profile" component={Profile}/>
-                    <PrivateRoute path="/customers" auth={auth} component={Customers}/>
+                    <PrivateRoute path="/customers" auth={auth} component={CustomerContainer}/>
                 </div>
             </AuthContext.Provider>
         </>;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CustomerListRow = ({customer}) => {
     return (
-        <tr>
+        <tr className="customer">
             <td>{customer.id}</td>
             <td>{customer.name}</td>
             <td>{customer.email}</td>
