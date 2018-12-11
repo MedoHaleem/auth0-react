@@ -1,7 +1,6 @@
 import React from 'react';
 import {shallow, mount} from 'enzyme';
 import Customers from './Customers';
-import CustomerList from './CustomerList'
 
 describe('Customers', () => {
     it('Shows a loading bar when loading', () => {

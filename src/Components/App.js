@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Route} from "react-router-dom";
 import Home from './Home/Home';
-import Profile from './Profile/Profile';
+import ProfileContainer from '../Containers/ProfileContainer';
 import Nav from './Layout/Nav';
 import './App.css';
 import Auth from '../Authorization/Auth';
@@ -41,7 +41,7 @@ class App extends Component {
                         path="/callback"
                         render={props => <Callback auth={auth} {...props} />}
                     />
-                    <PrivateRoute path="/profile" component={Profile}/>
+                    <PrivateRoute path="/profile" component={ProfileContainer}/>
                     <PrivateRoute path="/customers" auth={auth} component={CustomerContainer}/>
                 </div>
             </AuthContext.Provider>

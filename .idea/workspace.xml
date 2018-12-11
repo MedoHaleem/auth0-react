@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="232bbc26-ef29-4a2d-a332-ea91aea93dfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Customers/Customers.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Containers/CustomersContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/e2e.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Containers/ProfileContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Customers/CustomerList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Customers/CustomerList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Customers/CustomerListRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Customers/CustomerListRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Customers/Customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Customers/Customers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Customers/Customers.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Customers/Customers.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Profile/Profile.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,73 +21,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/e2e.test.js">
+        <entry file="file://$PROJECT_DIR$/src/Components/Profile/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="3" lean-forward="true" selection-end-line="56" selection-end-column="3" />
+            <state relative-caret-position="207">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Containers/ProfileContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/Components/Profile/Profile.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Containers/CustomersContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Customers/CustomerListRow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Customers/CustomerList.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="184">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -102,10 +56,43 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="575">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Containers/CustomersContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PrivateRoute.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,20 +152,22 @@
         <option value="$PROJECT_DIR$/e2e.test.js" />
         <option value="$PROJECT_DIR$/sample.test.js" />
         <option value="$PROJECT_DIR$/src/__mock__/Auth.js" />
-        <option value="$PROJECT_DIR$/src/Components/Profile/Profile.js" />
         <option value="$PROJECT_DIR$/src/Components/Home/Home.js" />
         <option value="$PROJECT_DIR$/__mocks__/Auth.js" />
         <option value="$PROJECT_DIR$/src/PrivateRoute.js" />
         <option value="$PROJECT_DIR$/src/Authorization/Auth.js" />
         <option value="$PROJECT_DIR$/src/e2e.test.js" />
         <option value="$PROJECT_DIR$/src/Components/Customers/Customers.js" />
-        <option value="$PROJECT_DIR$/src/Components/App.js" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
         <option value="$PROJECT_DIR$/src/Containers/CustomersContainer.js" />
         <option value="$PROJECT_DIR$/src/Components/Customers/CustomerList.js" />
-        <option value="$PROJECT_DIR$/src/Components/Customers/Customers.test.js" />
         <option value="$PROJECT_DIR$/src/Components/Customers/CustomerListRow.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/Containers/ProfileContainer.js" />
+        <option value="$PROJECT_DIR$/src/Components/App.js" />
+        <option value="$PROJECT_DIR$/src/Components/Customers/Customers.test.js" />
+        <option value="$PROJECT_DIR$/src/Components/Profile/Profile.js" />
+        <option value="$PROJECT_DIR$/src/Components/Profile/Profile.test.js" />
       </list>
     </option>
   </component>
@@ -223,7 +212,13 @@
               <item name="aslovi-case3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Components" type="462c0819:PsiDirectoryNode" />
-              <item name="Customers" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aslovi-case3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aslovi-case3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Containers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,17 +243,18 @@
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\Containers" />
+      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\__mock__" />
+      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3" />
+      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src" />
       <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\Components\Customers" />
       <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\Components\Home" />
       <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\Components\Layout" />
       <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\Components\Profile" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src\__mock__" />
-      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3" />
-      <recent name="C:\Users\Medo\WebstormProjects\aslovi-case3\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,20 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.Customers">
-    <configuration name="Bookish" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/e2e.test.js" />
-      <test-names>
-        <test-name value="Bookish" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.Profile (1)">
     <configuration name="Customers" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -313,6 +296,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Profile (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/Components/Profile/Profile.test.js" />
+      <test-names>
+        <test-name value="Profile" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Profile" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -326,17 +322,17 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Profile.User Profile" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Profile.Shows nothing when profile is empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/e2e.test.js" />
+      <test-file value="$PROJECT_DIR$/src/Components/Profile/Profile.test.js" />
       <test-names>
         <test-name value="Profile" />
-        <test-name value="User Profile" />
+        <test-name value="Shows nothing when profile is empty" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -355,11 +351,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Profile (1)" />
+        <item itemvalue="Jest.Profile.Shows nothing when profile is empty" />
         <item itemvalue="Jest.Customers" />
         <item itemvalue="Jest.Profile" />
         <item itemvalue="Jest.Home" />
-        <item itemvalue="Jest.Profile.User Profile" />
-        <item itemvalue="Jest.Bookish" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +378,7 @@
       <workItem from="1544343287380" duration="9599000" />
       <workItem from="1544371207123" duration="2640000" />
       <workItem from="1544429043750" duration="10096000" />
-      <workItem from="1544525903378" duration="6857000" />
+      <workItem from="1544525903378" duration="11888000" />
     </task>
     <task id="LOCAL-00001" summary="initialize app">
       <created>1544011363317</created>
@@ -447,25 +443,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544439778838</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="writing Unit Test">
+      <created>1544533334739</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544533334739</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Customers - 2018.12.11 at 14h 57m 03s.xml">
-      <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Customers - 2018.12.11 at 14h 57m 29s.xml">
-      <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Customers - 2018.12.11 at 14h 58m 16s.xml">
-      <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Customers - 2018.12.11 at 14h 58m 27s.xml">
-      <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="Customers - 2018.12.11 at 14h 59m 01s.xml">
-      <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Customers - 2018.12.11 at 14h 59m 56s.xml">
       <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -481,13 +469,27 @@
     <history-entry file="Customers - 2018.12.11 at 15h 01m 09s.xml">
       <configuration name="Customers" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="Profile_Shows_nothing_when_profile_is_empty - 2018.12.11 at 17h 42m 31s.xml">
+      <configuration name="Profile.Shows nothing when profile is empty" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Profile_(1) - 2018.12.11 at 17h 43m 49s.xml">
+      <configuration name="Profile (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Profile_(1) - 2018.12.11 at 17h 44m 04s.xml">
+      <configuration name="Profile (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Profile_(1) - 2018.12.11 at 17h 45m 18s.xml">
+      <configuration name="Profile (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Profile_(1) - 2018.12.11 at 17h 45m 26s.xml">
+      <configuration name="Profile (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66589000" />
+    <option name="totallyTimeSpent" value="71620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18833727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -523,7 +525,8 @@
     <MESSAGE value="moved token from localStorage to In-memory per Auth0 specs" />
     <MESSAGE value="display access token in profile to test with api" />
     <MESSAGE value="change styling a little bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="change styling a little bit" />
+    <MESSAGE value="writing Unit Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="writing Unit Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,37 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Profile/Profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Authorization/Auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PrivateRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,40 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Containers/CustomersContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Customers/CustomerList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -742,7 +688,7 @@
     <entry file="file://$PROJECT_DIR$/src/e2e.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="3" lean-forward="true" selection-end-line="56" selection-end-column="3" />
+          <caret line="11" column="3" selection-end-line="56" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -750,6 +696,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PrivateRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Containers/CustomersContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Customers/Customers.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Profile/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Containers/ProfileContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Profile/Profile.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
