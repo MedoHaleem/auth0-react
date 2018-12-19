@@ -29,7 +29,7 @@ Sales rep roles is setup using  slightly edited Auth0 rule, this is the followin
   // You can add a Role based on what you want
   // In this case I check domain
   const addRolesToUser = function(user) {
-    const endsWith = '@asolvi.com';
+    const endsWith = '@gmail.com';
 
     if (user.email && (user.email.substring(user.email.length - endsWith.length, user.email.length) === endsWith)) {
       return ['sales_rep'];
