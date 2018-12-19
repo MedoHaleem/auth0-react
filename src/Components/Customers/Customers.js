@@ -4,10 +4,10 @@ import CustomerList from './CustomerList';
 
 function Customers({loading, error, customers}) {
     if (loading) {
-        return <div className="loading"/>;
+        return <div className="loading">Loading...</div>;
     }
     if (error) {
-        return <div className="error"/>;
+        return <div className="error">{error}</div>;
     }
     return (
         <div>
